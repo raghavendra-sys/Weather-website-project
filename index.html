@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather App</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0077ff;
+}
+
+.weather-box {
+    margin-top: 20px;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.city {
+    font-size: 22px;
+}
+
+.desc {
+    color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>🌦 Weather App</h2>
+    
+    <input type="text" id="cityInput" placeholder="Enter city">
+    <button id="btn">Search</button>
+
+    <div class="weather-box">
+        <div class="city" id="cityName">--</div>
+        <div class="temp" id="temp">--°C</div>
+        <div class="img"></div>
+        <div class="desc" id="aqiindex">--</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
