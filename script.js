@@ -25,7 +25,7 @@ async function tempfinder(citys) {
     try{
         let city=citys.toLowerCase();
         console.log(city)
-        let url=await fetch(`http://api.weatherapi.com/v1/current.json?key=8cd26eba5e6b45ca801174803262503&q=${city}&aqi=yes`)
+        let url=await fetch(`https://api.weatherapi.com/v1/current.json?key=8cd26eba5e6b45ca801174803262503&q=${city}&aqi=yes`)
         let resp=await url.json();
         document.querySelector("#temp").innerHTML=resp.current.temp_c+"°C"
         document.querySelector(".img").innerHTML=`<img src="${resp.current.condition.icon}"> `
